@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-widht,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<limk rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="shortcut icon" href="img/logotipo.svg">
+	<link rel="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+	
+	<title>Contato</title>
+
+<style>
+@media screen and (max-width: 599px){
+	.container{
+		margin-top: 95%;
+	}
+	}
+
+@media screen and (min-width:600px){
+	.container{
+		margin-top: 40%;
+	}
+	}
+
+@media screen and (min-width: 768px){
+	.container{
+		margin-top: 20%;
+	}  
+	header{
+		background-color: rgba(65,105,225,0.8);
+		flex-direction: row;
+		position: relative;
+	}
+	.menu-opcoes{
+		position: absolute;
+		right: 5%;
+		top: 45%;
+	}		
+	.menu-opcoes ul li{
+		display: inline;
+		margin-left: 15px; 
+	}
+	}
+</style>
+<style>
+	.fixo{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}	
+</style>
+<style>
+		header, footer{
+		background-color: rgb(65,105,255,1);
+		padding: 5%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.5em;
+		line-height: 1.5em;
+
+	}
+</style>	
+</head>
+<body background="https://s8cdn.joomag.com/res_mag/0/782/782800/1473593/thumbs/35420800.jpg?1558099753">
+	<header class="fixo">
+		<img class="imglogo" src="img/logotipo.svg">
+		<nav class="menu-opcoes">
+			<ul class="ajustes">
+				<li><a href="index.html">Animais</a></li>
+				<li><a href="#Contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<h1 class="titulos"> Formulário para Contato</h1>
+
+			<p class="centro">Entre em contato conosco, para retirar as sua dúvidas, dizer sua sugestões, ideias para melhorar o site entre outras coisas.</p>
+			<form class="funco">
+				<br>
+				<div>
+					<label for="fname">Seu primeiro Nome:</label><br>
+					<input type="text" placeholder="Digite seu nome."><br>
+					<label for="Iname">Seu sobrenome:</label><br>
+					<input type="text" placeholder="Digite seu sobrenome."><br>
+				</div>
+				<br>
+				<div>
+					<form action="/action_page.php">
+  						<label for="datemax">Digite sua data de nascimento:</label>
+ 			 			<input type="date" id="datemax" name="datemax" max="1900-1-1">
+ 			 	</div>
+ 			 	<br>
+  				<div>
+  					<fieldset>
+  					<label for="Iname">Gênero</label><br>
+  					<input type="radio" id="Feminino" name="fav_genero" value="Feminino">
+  					<label for="Femenino">Feminino</label><br>
+  					<input type="radio" id="Masculino" name="fav_genero" value="Masculino">
+  					<label for="Masculino">Masculino</label><br>
+  					<input type="radio" id="Prefiro não dizer" name="fav_genero" value="´Prefiro não dizer">
+  					<label for="Prefiro não dizer">Prefiro não dizer</label>
+  					</fieldset>
+  				</div>
+  				<br>
+				<div>
+					<fieldset>  					
+					<label for="Iname">Questionamento</label><br>
+  					<input type="radio" id="Sugestão" name="fav_questionamento" value="Sugestãoo">
+  					<label for="Sugestão">Sugestão</label><br>
+  					<input type="radio" id="Dúvida" name="fav_questionamento" value="Dúvida">
+  					<label for="Dúvida">Dúvida</label><br>
+  					<label for="Outro assunto">Outro assunto</label>
+  					<input type="text" id="Iname" name="Iname"><br>
+  					</fieldset>
+  				</div>
+  				<br>
+  				<div class="distancia">
+  					<h2>Pergunta difícil:</h2>
+  					<input type="checkbox" id="male" name="gender" value="male">
+  					<label for="male">Biscoito</label><br>
+  					<h2>Ou</h2>
+  					<input type="checkbox" id="female" name="gender" value="female">
+  					<label for="female">Bolacha</label><br>
+  				</div>
+  				<br><br>
+  				<div>
+  					<label for="Ensino">Escolha a escolaridade que você está:</label>
+					<select id="Ensino" name="Ensino">
+  						<option value="Ensidno fundamental">Ensino fundamental</option>
+  						<option value="Ensino médio">Ensino médio</option>
+  						<option value="Cursando faculdade">Cursando faculdade</option>
+  						<option value="Faculdade concluída">Faculdade concluída</option>
+					</select>
+
+					<h2>Texto</h2>
+						<div>
+							<p>Escreva a sua dúvida ou sugestão para nós.</p>
+  							<textarea name="message" rows="10" cols="30">Digite aqui, sua dúvida sugestão ou outra coisa!</textarea>
+  						<br><br>
+  						</div>
+  				</div>
+  				<div>
+  				<input type="submit" value="Submit">
+  				</div>
+			</form> 
+
+		<p><a class="teste" href="https://www.etecmcm.com.br/" target="_blank">Clique aqui e conheça a Etec Maria Cristina Medeiros.</a></p> 
+		<footer>Rodapé</footer>
+</body>
+</html>

@@ -1,0 +1,341 @@
+	
+
+	html{
+		scroll-behavior: smooth;
+	}
+
+
+	body{	
+		background-color: #EE82EE;
+	    background-repeat: round;
+		font-family: 'Domine', serif;
+	}
+
+	.container{
+		margin-top: 35%;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		position: relative;
+	}
+
+	.fixo{
+		position: fixed;
+		top: 0;
+		right: :0;
+		left:0;
+		z-index: 1030;
+	}
+
+	.ajustes{
+
+		line-height: 1;
+		text-align: center;
+	}
+
+	.ajustes li: hover{
+		background-color: #708090;
+	}
+
+	
+			
+	.centro{
+		color: #4169E1;
+		text-align: center;
+	}
+	
+	.listastexto{
+
+		text-decoration: underline;
+		color: #fff;
+		font-weight: bolder;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		font-size: 1em;
+	}
+
+
+	.imgtexto {
+		width: 50%;
+		}
+
+	.funco{
+		background-color: #fff;
+		width:80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5%;
+	}
+
+	header, footer{
+		background-color: rgba(25,15,112,0.5);
+		padding:1%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.5em;
+		font-weight: bolder;
+	}
+
+	h1,{
+		font-size: 2em;	
+	}
+
+	h2{
+		font-size: 1.5em;
+	}	
+
+	h3{
+		font-size: 1.25em;
+	}
+
+	p{
+
+		color: #FF8C00;
+		font-weight: bolder;
+		font-size: 1.5em;
+		text-align:justify;
+		margin-top: 2%;
+		margin-left: 2%;
+	}
+
+	figure{
+		text-align: center;
+
+	}
+
+	img{
+		width: 50%;
+		}
+
+	fieldset{
+		width: 80%;
+		border: 3px solid #ccc;
+		padding: 2%;
+	}
+
+	#sobre{
+		display: flex;
+		flex direction: column;
+		align-items: center;
+		position: relative;
+		margin: 0 auto;
+
+	}
+
+	.imgsobre{
+		width: 20%;
+		height: 20%;
+		transition: width 2s;
+	}
+
+	#sobre .sobre{
+		text-align: center;
+	}
+
+
+	.item{
+		position: relative;
+		margin: 10px 0;
+
+	}
+
+	.item::before{
+		content: '';
+		position: relative;
+		left: 0;
+		top:  0;
+		padding: 10px 15px;
+		background-image: url('../img/li.png');
+		background-repeat: no-repeat;
+
+	}
+
+	input[type=text], select{
+		width: 80%
+		border-radius: 10px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		display: block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	a:link{
+		color: #fff;
+		background-color: transparent;
+		text-decoration: none. 
+	}
+
+	a:visited {
+		color: #fff;
+		background-color: none;
+	}
+
+	a:houver{
+		color: red;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
+	a:active{
+		color: yellow;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
+	table{
+		border-collapse: collapse;
+		width: 60%;
+		color: #EE82EE;
+		font-size: 1.1em;
+		margin-right: auto;
+		margin-left: auto;
+	}	
+
+	td, th{
+		color: 000080;
+		font-weight: 15px;
+		border: 5px dashed;
+		padding: 1.1%;
+	}
+
+	tr:nth-child(even) {
+		background-color: #363636;
+
+}
+
+@media screen and (max-width: 599px){
+	.container{
+		margin-top: 65%;
+	}
+	#sobre{
+		display: flex;
+		flex direction: column;
+		align-items: center;
+		position: relative;
+		margin: 0 auto;
+
+	}
+	
+	.imgsobre{
+		width: 20%;
+		height: 20%;
+		transition: width 2s;
+	}
+
+	#sobre .sobre{
+		text-align: center;
+	}
+
+
+}
+
+@media screen and (min-width:600px){
+	.container{
+		margin-top: 40%;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.container{
+		margin-top: 20%;
+	}  
+	header{
+		background-color: rgba(65,105,225);
+		flex-direction: row;
+		position: relative;
+	}
+
+
+	.menu-opcoes{
+		position: absolute;
+		right: 5%;
+		top: 45%;
+	}		
+	.menu-opcoes ul li{
+		display: inline;
+		margin-left: 15px; 
+	}
+
+	.imglogo{
+		background-color: #fff; 
+		width: 115px; 
+		height: 115px;
+		position: absolute;
+  		top: 10px;
+  		left: 5%;
+  		border: 2px solid red;
+  		border-radius: 5px;
+	}
+
+	.titulos{
+		text-align: center;
+		color:#EE82EE;
+		font-weight: bolder;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+	.menu-opcoes{
+		text-align: center;
+	}
+
+	#sobre{
+		display: flex;
+		flex direction: column;
+		align-items: center;
+		position: relative;
+		margin: 0 auto;
+
+	}
+
+	#sobre .sobre{
+		text-align: center;
+	}
+
+	#galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	#galeira .galeria{
+		text-align: center;
+	}
+
+	.imggaleria{
+		width: 85;
+		border-radius: 50px;
+		box-shadow: 20px 15px black
+	}
+	.imgsobre{
+		width: 20%;
+		height: 20%;
+		transition: width 2s;
+	}
+
+	.imgsobre:hover {
+		width: 100px;
+	}
+
+	#sobre, #galeria{
+		flex-direction: row;
+		flex-wrap: wrap;
+
+
+	}
+
+	#sobre h1, h3, p, #galeria{ 
+
+		width: 100%;
+		text-align: center;
+	}
+
+	#sobre .sobre, #galeira .galeria{
+		width: 20%;
+		text-align: center;
+	}
+}
